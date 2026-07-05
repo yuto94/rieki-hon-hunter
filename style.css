@@ -835,6 +835,11 @@ dd {
   line-height: 1.25;
 }
 
+.brain-affiliate-subhead {
+  color: #123d7a;
+  font-size: clamp(1rem, 4vw, 1.18rem);
+}
+
 .brain-affiliate-card p {
   margin: 0;
   line-height: 1.65;
