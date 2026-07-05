@@ -331,25 +331,29 @@ function getMainResultTitle(percent) {
 function getBrainAffiliateMessage(profit) {
   if (profit >= 10000) {
     return {
-      headline: "すごい！リアル副業としても狙えるかも",
-      body: "本せどりは、正しい基礎を知って続ければ、月1〜3万円の副業として十分現実的です。まずは初心者向けに全体像を学ぶのがおすすめです。"
+      headline: "仕入れマスター！",
+      subhead: "リアル副業としても検討してみて！",
+      body: "本せどりは、正しい基礎を知って続ければ、月1〜3万円の副業として十分現実的！このゲームで「本せどり面白そうじゃん」と思ってもらえたら、ぜひ実際の仕入れにもチャレンジを〜！"
     };
   }
   if (profit >= 3000) {
     return {
-      headline: "センスあり！次はリアル店舗でも挑戦",
-      body: "ゲームで利益を出せたなら、本せどりの考え方と相性がいいかもしれません。現実の仕入れでも、基本を覚えると一気に見つけやすくなります。"
+      headline: "センスあり！",
+      subhead: "リアル店舗でもぜひ挑戦を！",
+      body: "ゲームで利益を出せたなら、本せどりの考え方と相性がいいかもしれません！現実の仕入れでも、基本を覚えると一気に見つけやすくなりますよ🎵"
     };
   }
   return {
-    headline: "惜しい！最初はみんな迷います",
-    body: "利益本探しは、見るポイントを知らないと難しく感じます。まずは基本の型を知ると、仕入れ判断がかなりラクになります。"
+    headline: "ナイスファイト！",
+    subhead: "最初はみんな迷いますよね〜！",
+    body: "利益本探しは、見るポイントを知らないと時間がかかって難しい！まずは基本の型を知ると、仕入れ判断がかなりラクになりますよ🎵"
   };
 }
 
 function updateBrainAffiliateCard() {
   const message = getBrainAffiliateMessage(currentProfit);
   document.getElementById("brainAffiliateHeadline").textContent = message.headline;
+  document.getElementById("brainAffiliateSubhead").textContent = message.subhead;
   document.getElementById("brainAffiliateMessage").textContent = message.body;
 }
 
